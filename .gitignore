@@ -1,0 +1,17 @@
+# OS・エディタ関連
+.DS_Store
+Thumbs.db
+*.log
+
+# Node.js関連（必要な場合）
+node_modules/
+dist/
+.env
+
+# VS Code設定
+.vscode/
+
+# 一時ファイル
+*.tmp
+*.bak
+*.swp

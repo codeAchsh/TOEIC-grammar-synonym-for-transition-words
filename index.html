@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>類義語-前置詞、接続詞、接続副詞-ミニ辞典</title>
+
+  <!-- ページの説明 -->
+<meta name="description" content="TOEIC対策に役立つ前置詞・接続詞・接続副詞などのつなぎ言葉を、類義語別に分類した例文を表示し、穏やかで直感的なインターフェースで学べる学習ページです。" />
+
+<!-- SEO関連 -->
+<meta name="keywords" content="TOEIC, transition words, grammar, 前置詞, 接続詞, 接続副詞, 英語文法, 穏やかな学習, 直感的な学習, 英語語尾, TOEIC文法, 接続語, 英語学習, 英語表現, 英語のつなぎ言葉, 類義語" />
+
+<!-- SNS表示（OpenGraph） -->
+<meta property="og:title" content="TOEIC Grammar: 穏やかに学ぶ英語のつなぎ言葉" />
+<meta property="og:description" content="前置詞・接続詞・接続副詞などを、類義語によって分類して例文を表示させる、静かな空間で感覚的に学べるTOEIC学習ページ。" />
+<meta property="og:image" content="https://codeachsh.github.io/TOEIC-grammar-for-transition-words/images/thumbnail.png" />
+<meta property="og:url" content="https://codeachsh.github.io/TOEIC-grammar-for-transition-words/" />
+<meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google tag (gtag.js) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-P16Z7PRNNF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-P16Z7PRNNF');
+  </script> -->
+
+
+  <link rel="shortcut icon" href="imagaes/icon.ico" />
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <!-- <h1>意味別 接続詞・前置詞・副詞の例文表示</h1> -->
+  <h1>TOEIC -類義語を学ぶ：前置詞、接続詞、接続副詞-</h1>
+
+  <div class="button-group">
+    <button onclick="showExamples('but')">〜だけれども</button>
+    <button onclick="showExamples('reason')">〜だから</button>
+    <button onclick="showExamples('time')">〜している間に</button>
+    <button onclick="showExamples('cause')">〜が原因で</button>
+    <button onclick="showExamples('contrast')">〜にもかかわらず</button>
+    <button onclick="showExamples('timing')">〜するとすぐに</button>
+    <button onclick="showExamples('purpose')">〜するために</button>
+    <button onclick="showExamples('condition')">〜の場合には</button>
+    <button onclick="showExamples('extent')">〜する限り</button>
+    <button onclick="showExamples('addition')">〜に加えて</button>
+    <button onclick="showExamples('contrast2')">〜の代わりに</button>
+    <button onclick="showExamples('contrast3')">〜である一方で</button>
+    <!-- 他のボタンも追加可能 -->
+  </div>
+
+  <div id="output" class="output-area"></div>
+
+  <div class="toeic-top">
+    <a href="https://codeachsh.github.io/TOEIC-GrammarTools/" class="top-button">TOEIC文法ツールへ戻る</a>
+  </div>
+
+
+  <footer>
+    <div class="ad-template-link">
+      <p>🧁 Links to our works</p>
+      <div>
+        <a href="https://codeachsh.github.io/All-template-Japanese-/" target="_blank">
+          📦 Click here for a list of useful templates.！
+        </a>
+      </div>
+      <div>
+        <a href="https://note.com/chill_2525" target="_blank" class="note-link">
+          ✨ Blogs, templates, and growth records are being compiled and published. → note.com/chill_2525
+        </a>
+      </div>
+    </div>
+    <p>&copy; 2025 Chill_2525 | code.achsh@gmail.com</p>
+  </footer>
+
+  <!-- Consent Banner -->
+  <div id="consent-banner" style="position:fixed;bottom:0;left:0;right:0;background:#f8f8f8;padding:1em;text-align:center;box-shadow:0 -2px 5px rgba(0,0,0,0.1);z-index:9999;">
+    このサイトは分析のためにCookieを使用します。<button onclick="acceptConsent()">同意する</button>
+  </div>
+
+  <script>
+    function acceptConsent() {
+      localStorage.setItem('gentleConsent', 'true');
+      document.getElementById('consent-banner').style.display = 'none';
+      loadGoogleAnalytics();
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const consent = localStorage.getItem('gentleConsent');
+      if (consent === 'true') {
+        document.getElementById('consent-banner').style.display = 'none';
+        loadGoogleAnalytics();
+      }
+    });
+  </script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
