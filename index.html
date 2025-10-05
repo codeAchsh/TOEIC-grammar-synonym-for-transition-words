@@ -28,8 +28,18 @@
   gtag('config', 'G-KX0PHX1PKD');
 </script>
 
+  <script>
+    window.onload = function() {
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = "assets/style.css";
+      document.head.appendChild(link);
+    };
+  </script>
+
 
   <link rel="shortcut icon" href="imagaes/icon.ico" />
+  <base href="./">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -52,10 +62,12 @@
     <!-- 他のボタンも追加可能 -->
   </div>
 
-  <div id="output" class="output-area"></div>
+  <div id="output" class="output-area">
+    <p class="placeholder">ボタンをクリックすると、ここに例文が表示されます。</p>
+  </div>
 
   <div class="toeic-top">
-    <a href="https://codeachsh.github.io/TOEIC-GrammarTools/" class="top-button">TOEIC文法ツールへ戻る</a>
+    <a href="../TOEIC-GrammarTools/index.html" class="top-button">TOEIC文法ツールへ戻る</a>
   </div>
 
 
